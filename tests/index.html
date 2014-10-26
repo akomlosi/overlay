@@ -1,0 +1,23 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Mocha tests</title>
+	<link rel="stylesheet" href="../node_modules/mocha/mocha.css">
+</head>
+<body>
+<div id="mocha"></div>
+<div id="sandbox">
+	<div id="overlay_background"></div>
+	<div id="overlay_container"></div>
+</div>
+<script type="script/template" id="overlay_content_template">
+	<div id="overlay_content">
+		<a class="close"></a>
+	</div>
+</script>
+<script src="../node_modules/mocha/mocha.js"></script>
+<script>mocha.setup('tdd')</script>
+<script src="../bundle.js"></script>
+<script>mocha.run();</script>
+</body>
+</html>
